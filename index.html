@@ -170,13 +170,15 @@ Submit Order
 
 
 
-<button type="button" class="cashapp" onclick="cashapp()">
-Pay with Cash App
-</button>
+<a id="cashapplink" href="#" target="_blank">
+
+<button type="button" class="cashapp">
 
 Pay with Cash App
 
 </button>
+
+</a>
 
 
 
@@ -221,17 +223,31 @@ preview.style.display = "block";
 
 
 
-function cashapp(){
-
-function cashapp(){
+function updateCashApp(){
 
 var total = document.getElementById("total").innerText;
 
-window.open("https://cash.app/$jaydhee62/" + total);
+var link = "https://cash.app/$JDGlobalEnterprise/" + total;
+
+document.getElementById("cashapplink").href = link;
 
 }
 
-}
+document.getElementById("product").onchange = function(){
+
+calculate();
+updateCashApp();
+
+};
+
+document.getElementById("qty").oninput = function(){
+
+calculate();
+updateCashApp();
+
+};
+
+updateCashApp();
 
 
 
