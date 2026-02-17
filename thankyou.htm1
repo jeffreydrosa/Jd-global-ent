@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Order Confirmed</title>
+
+<style>
+
+body{
+
+background:black;
+color:white;
+text-align:center;
+font-family:Arial;
+padding-top:100px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Order Submitted Successfully</h1>
+
+<p>We received your order.</p>
+
+<p>You can now complete payment.</p>
+
+<a href="https://cash.app/$jaydhee62">
+
+<button style="padding:15px;font-size:18px;background:#00C244;color:white;border:none;">
+
+Pay Now
+
+</button>
+
+</a>
+
+</body>
+
+</html>
