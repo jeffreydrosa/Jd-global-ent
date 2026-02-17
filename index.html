@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>JD Global Enterprise</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body {
+
+background:black;
+color:white;
+font-family:Arial;
+text-align:center;
+padding:20px;
+
+}
+
+img {
+
+width:250px;
+
+}
+
+.box {
+
+background:#111;
+padding:20px;
+border-radius:10px;
+max-width:400px;
+margin:auto;
+
+}
+
+input, select {
+
+width:90%;
+padding:12px;
+margin:10px;
+
+}
+
+button {
+
+padding:15px;
+margin:10px;
+border:none;
+font-size:18px;
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<img src="logo.png">
+
+
+<h1>Order Custom Apparel</h1>
+
+
+<div class="box">
+
+
+<form action=“https://formspree.io/f/mvzbrqwq" method="POST" enctype="multipart/form-data">
+
+
+<select name="product">
+
+<option value="T-Shirt">Blank T-Shirt — $10</option>
+
+<option value="Hoodie">Blank Hoodie — $25</option>
+
+<option value="Hat">Blank Hat — $15</option>
+
+</select>
+
+
+
+<input type="number" name="quantity" placeholder="Quantity" required>
+
+
+
+<input type="file" name="logo">
+
+
+
+<input type="text" name="name" placeholder="Name" required>
+
+
+
+<input type="email" name="email" placeholder="Email" required>
+
+
+
+<button type="submit">
+
+Submit Order
+
+</button>
+
+
+</form>
+
+
+
+<a href="https://cash.app/$jaydhee62">
+
+<button>
+
+Pay with Cash App
+
+</button>
+
+</a>
+
+
+
+<a href="https://buy.stripe.com/YourStripeLink">
+
+<button>
+
+Pay with Card
+
+</button>
+
+</a>
+
+
+</div>
+
+
+</body>
+
+</html>
