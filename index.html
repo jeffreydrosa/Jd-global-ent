@@ -118,7 +118,7 @@ display: none;
 </select>
 
 
-<input type="number" id="qty" value="1" onchange="calculate()">
+<input type="number" id="qty" value="1" oninput="calculate()">
 
 
 
@@ -183,16 +183,15 @@ Pay with Card
 
 function calculate(){
 
-var price = document.getElementById("product").value;
+var price = parseFloat(document.getElementById("product").value);
 
-var qty = document.getElementById("qty").value;
+var qty = parseFloat(document.getElementById("qty").value) || 0;
 
 var total = price * qty;
 
 document.getElementById("total").innerHTML = total;
 
 }
-
 
 
 function preview(){
@@ -222,7 +221,7 @@ function stripe(){
 window.open("https://buy.stripe.com/YourStripeLink");
 
 }
-
+calculate();
 
 </script>
 
